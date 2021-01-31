@@ -51,13 +51,14 @@ Some insights:
 3. For each speech there are some sentences as salutations. That's why I preferred to drop them.
 
 4. According to collected Meta data for each politician;
-		- Both leader gave less speeches in 2020 than before, it may be because of Corona. 
 
-		- While Herr Steinmeir gives his speeches mosthly in Juni and October, Frau Merkel gives in Mai and Novenmber. Moreover, the number of her speeches has increased from Monday to Wendsday, and then it decreased stedealy. 
+	- Both leader gave less speeches in 2020 than before, it may be because of Corona. 
 
-		- After Berlin, Herr Steinmeir frequently gives  his speeches as following places; Hamburg, München, Frankfurt am Main. On the other hand Merkel gives her speechs after Berlin and Unkown places, Hannover, Frankfurt am Main, München. 
+	- While Herr Steinmeir gives his speeches mosthly in Juni and October, Frau Merkel gives in Mai and Novenmber. Moreover, the number of her speeches has increased from Monday to Wendsday, and then it decreased stedealy. 
+
+	- After Berlin, Herr Steinmeir frequently gives  his speeches as following places; Hamburg, München, Frankfurt am Main. On the other hand Merkel gives her speechs after Berlin and Unkown places, Hannover, Frankfurt am Main, München. 
 		
-		-Moreover, Herr Steinmer made 5 speeches in Poland, 4 in Itaily, 3 in Spain, USA, and Kazakhistan, whereas Frau Merkel made 10 in New York, 7 in Davos, 6 in Nairobi, and Pekin
+	-Moreover, Herr Steinmer made 5 speeches in Poland, 4 in Itaily, 3 in Spain, USA, and Kazakhistan, whereas Frau Merkel made 10 in New York, 7 in Davos, 6 in Nairobi, and Pekin
 
 5. Speeches of Frau Merkel is longer than Herr Steinmeir
 
@@ -66,9 +67,10 @@ Some insights:
 7. Predection for the whole textes was more than 90%, whereas it was reduced around 80%.
 
 8. When Word Embeding method is used;
-		- The context of speeched shows many insights; for example,the closest three word to "Demoratie"(democracy) is "Gesellschaft"(society), "mitzureden"(speaking together), and "Verantwortung"(responsibility)
 
-		- We can alsa apply word calculation; for example if we extract democracy from germany and add power, the model predict exil. 
+	- The context of speeched shows many insights; for example,the closest three word to "Demoratie"(democracy) is "Gesellschaft"(society), "mitzureden"(speaking together), and "Verantwortung"(responsibility)
+
+	- We can alsa apply word calculation; for example if we extract democracy from germany and add power, the model predict exil. 
 
 Limitation & Further:
 
