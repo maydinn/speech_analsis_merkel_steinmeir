@@ -13,22 +13,28 @@ Speeches of Herr Steinmeir: https://www.bundespraesident.de/DE/Bundespraesident/
 examples of some important used methods:
 
 #giving unkown label for unkown localtion
+
 	steinmeier['meta'] = steinmeier.meta.apply(lambda x: 'Unkown, ' + x.split(', ')[0] if len(x.split(', ')) == 1 else x)
 
 #obtaining month values from meta column
+
 	steinmeier['month']= steinmeier.meta.apply(lambda x: x.split(',')[1].split(' ')[1])
 
 #pivot table for months and years
+
 	table = steinmeier.groupby(['year','month']).count().pivot_table(columns=['month'], index=['year'], aggfunc='sum')['meta']
 
 
 #trying to determine best split point by chosen value
+
 	merkel[merkel.meta.apply(lambda x: True if len(x.split('\nOrt:\n'))==2 else False )]
 
 #obtaining places where Frau Merkel gave speeches from Meta column, and given Unkown otherwise
+
 	merkel['place']=merkel.meta.apply(lambda x: 'Unkown' if '\nOrt:\n' not in x else x.split('\nOrt:\n')[1])
 
-#using feature importance for nlp	
+#using feature importance for nlp
+
 	feature_imp = pd.Series(model_log.coef_[0],
                         index=vectorizer.get_feature_names()).sort_values(ascending=False).head(10)
 	sns.barplot(x=feature_imp, y=feature_imp.index)
@@ -37,6 +43,7 @@ examples of some important used methods:
 
 
 Some insights:
+
 1. In order to access data I used Selenium
 
 2. Since time of being in power is different for two politicians, the volume of data for each politicians was not same
