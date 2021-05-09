@@ -2,7 +2,7 @@
 
 DESCRIPTION:
 
-In this repository, you will find the analyzes of the press release of some political parties in Germany Also, you will find models to predict Which press release belongs to which political party
+In this repository, you will find the analyzes of speeches of two German political leaders. Also, you will find models to predict Which speeches belongs to which politicians and  a model used Word Embeding method
 
 DATA:
 
